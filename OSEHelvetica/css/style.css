@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@charset "utf-8";
+* {
+	padding: 0px;
+	margin: 0px;
+}
+html {
+	font-size: 100%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+ul {
+	list-style: none;
+}
+:focus {
+	outline: 0;
+}
+a, a:link {
+	text-decoration: none;
+	outline: none;
+}
+p {
+	padding: 2px 0;
+}
+.clear {
+	clear: both;
+}
+
+.clear {
+	clear: both;
+	display: block;
+}
+.clearfix {
+ *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background-size: cover;
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light-webfont.eot');
+    src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff'),
+         url('../fonts/lato-light-webfont.ttf') format('truetype'),
+         url('../fonts/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.eot');
+    src: url('../fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff'),
+         url('../fonts/lato-bold-webfont.ttf') format('truetype'),
+         url('../fonts/lato-bold-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+main{
+	width: 1110px;
+	margin: 100px auto;
+}
+
+.top-section{
+	width: 100%;
+}
+
+.top-top{
+	/* padding-top: 100px; */
+	padding-bottom: 10px;
+	border-bottom: 2px solid #367da2;
+}
+
+.top-top h1{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+	font-size: 50px;
+	color: #222;
+	font-weight: lighter;
+}
+
+.top-bottom{
+}
+
+.top-bottom-left{
+	float: left;
+	width: 49%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+	padding: 20px 0;
+	line-height: 25px;
+	margin-right: 6%;
+}
+
+.top-bottom-right{
+	float: right;
+	width: 45%;
+	padding: 20px 0;
+}
+
+.top-table{
+	width: 100%;
+}
+
+.top-table-row{
+	width: 100%;
+	border-top: 2px solid #5b87b8;
+}
+
+.top-table-row:last-child{
+	border-bottom: 2px solid #5b87b8;
+}
+
+.top-table-row-left{
+	float: left;
+    padding: 10px;
+    width: 59%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+	font-weight: 700;
+}
+
+.top-table-row-right{
+	width: 32%;
+	float: left;
+	padding: 9.4px 11px 10px 11px;
+	background: #fdf7e4;
+	border-left: 2px solid #5b87b8;
+	text-align: right;
+}
+
+.summary-section{
+	width: 100%;
+	margin-top: 50px;
+}
+
+.summary-top{
+}
+
+.summary-top h2{
+	text-transform: uppercase;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+	font-size: 30px;
+	color: #222;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.summary-bottom{
+	border-top: 2px solid #5b87b8;
+	border-bottom: 2px solid #5b87b8;
+}
+.summary-row{
+	width: 100%;
+	border-bottom: 2px dotted #5b87b8;
+}
+
+.summary-row:last-child{
+	border-bottom: none;
+}
+
+.summary-left{
+	width: 36%;
+	border-right: 2px solid #5b87b8;
+	float: left;
+	padding: 8px 5px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 700;
+}
+.summary-mid{
+	width: 10%;
+	border-right: 0px solid #5b87b8;
+	float: left;
+	padding: 8px 5px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-align: right;
+}
+
+.summary-right{
+	width: 50%;
+	float: left;
+	padding: 8px 10px;
+	text-align: left;
+}
+
+.detail-table{
+	width: 100%;
+	margin-top: 50px;
+}
+
+.detail-table .row-head{
+	width: 100%;
+	background: #367da2;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+}
+
+.detail-table .row-head .order{
+	float: left;
+	padding: 10px 1.64%;
+    width: 25%;
+	border-right: 1px solid #ccc;
+}
+
+.detail-table .row-head .side{
+	float: left;
+	width: 10%;
+	padding: 10px 1%;
+	border-right: 1px solid #ccc;
+}
+
+.detail-table .row-head .price{
+	float: left;
+	width: 10%;
+	padding: 10px 2%;
+	border-right: 1px solid #ccc;
+}
+
+.detail-table .row-head .size{
+	float: left;
+	width: 10%;
+	padding: 10px 2%;
+	border-right: 1px solid #ccc;
+}
+
+.detail-table .row-head .time-in{
+	float: left;
+	width: 12%;
+	padding: 10px 2%;
+	border-right: 1px solid #ccc;
+}
+
+.detail-table .row-head .time-out{
+	float: right;
+	width: 10%;
+	padding: 10px 2%;
+	border-right: 1px solid #ccc;
+}
+
+.detail-table .row{
+	float: left;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.detail-table .row .order{
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	float: left;
+	width: 25%;
+	padding: 10px 2.66% 10px .5%;
+	border-left: 1px solid #404040;
+	border-bottom: 1px solid #404040;
+	font-weight: 700;
+}
+
+.detail-table .row .side{
+	float: left;
+	width: 10%;
+	padding: 10px 1%;
+	border-left: 1px solid #404040;
+	border-bottom: 1px solid #404040;
+	text-align: center;
+}
+
+.detail-table .row .price{
+	float: left;
+	width: 10%;
+	padding: 10px 2%;
+	border-left: 1px solid #404040;
+	border-bottom: 1px solid #404040;
+	text-align: center;
+}
+
+.detail-table .row .size{
+	float: left;
+	width: 10%;
+	padding: 10px 2%;
+	border-left: 1px solid #404040;
+	border-bottom: 1px solid #404040;
+	text-align: center;
+}
+
+.detail-table .row .time-in{
+	float: left;
+	width: 10%;
+	padding: 10px 3%;
+	border-left: 1px solid #404040;
+	border-bottom: 1px dashed #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	text-align: center;
+}
+
+.detail-table .row .time-out{
+	float: right;
+	width: 10%;
+	padding: 10px 28px;
+	border-bottom: 1px dashed #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	text-align: center;
+}
+
+span.date{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 700;
+}
+
+span.item{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 700;
+}
+
+span.item-detail{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 700;
+}
+
+.gray-bg{
+	background: #efefef;
+}
