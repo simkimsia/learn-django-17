@@ -52,9 +52,3 @@ docs/_build/
 
 # PyBuilder
 target/
-
-# virtualenv files and folders
-bin/
-include/
-local/
-share/
