@@ -7,6 +7,10 @@ from django.contrib import admin
 # Register your models here.
 from reports.models import Report, ReportTemplate
 
+from jinja2 import Template
+
+import json
+
 class ReportAdmin(admin.ModelAdmin):
     fields = ['commodity', 
     'date',
@@ -22,7 +26,13 @@ class ReportAdmin(admin.ModelAdmin):
         logger.debug('anything')
         for report in queryset:
             markup = report.template.markup
-            logger.debug(markup)
+            template = Template(markup)
+            trades = json.loads(report.data)
+            logger.debug('see trades')
+            logger.debug(trades)
+            final_markup = template.render(trades=trades)
+            logger.debug('see final markup')
+            logger.debug(final_markup)
         return
     print_as_pdf.short_description = 'Generate as pdf'
 
