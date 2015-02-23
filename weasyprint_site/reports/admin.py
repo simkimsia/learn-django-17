@@ -11,6 +11,10 @@ from jinja2 import Template
 
 import json
 
+from weasyprint import HTML, CSS
+
+from django.http import HttpResponse
+
 class ReportAdmin(admin.ModelAdmin):
     fields = ['commodity', 
     'date',
@@ -23,16 +27,22 @@ class ReportAdmin(admin.ModelAdmin):
     actions = ['print_as_pdf']
 
     def print_as_pdf(self, request, queryset):
-        logger.debug('anything')
+        # logger.debug('anything')
         for report in queryset:
             markup = report.template.markup
+            css = report.template.styles
             template = Template(markup)
+
             trades = json.loads(report.data)
-            logger.debug('see trades')
-            logger.debug(trades)
+            # logger.debug('see trades')
+            # logger.debug(trades)
             final_markup = template.render(trades=trades)
-            logger.debug('see final markup')
-            logger.debug(final_markup)
+            # logger.debug('see final markup')
+            # logger.debug(final_markup)
+            response = HttpResponse(content_type='application/pdf')
+            response['Content-Disposition'] = 'attachment; filename="somefilename.pdf"'
+            HTML(string=final_markup).write_pdf(response, stylesheets=[CSS(string=css)])
+            return response
         return
     print_as_pdf.short_description = 'Generate as pdf'
 
